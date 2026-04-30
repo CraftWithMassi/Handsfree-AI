@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState, createContext, useContext } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
@@ -20,12 +20,17 @@ import {
 } from "lucide-react";
 import heroDashboard from "@/assets/hero-dashboard.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
+import AuditFormModal from "@/components/AuditFormModal";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const AuditModalContext = createContext<{ open: () => void }>({ open: () => {} });
+const useAuditModal = () => useContext(AuditModalContext);
 
 const Index = () => {
   const root = useRef<HTMLDivElement>(null);
   const { lang } = useLanguage();
+  const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -59,21 +64,24 @@ const Index = () => {
   }, [lang]);
 
   return (
-    <div ref={root} className="min-h-screen font-sans text-foreground">
-      <Navbar />
-      <main>
-        <Hero />
-        <Logos />
-        <Problem />
-        <Solution />
-        <HowItWorks />
-        <UseCases />
-        <Benefits />
-        <SocialProof />
-        <FinalCTA />
-      </main>
-      <Footer />
-    </div>
+    <AuditModalContext.Provider value={{ open: () => setModalOpen(true) }}>
+      <div ref={root} className="min-h-screen font-sans text-foreground">
+        <Navbar />
+        <main>
+          <Hero />
+          <Logos />
+          <Problem />
+          <Solution />
+          <HowItWorks />
+          <UseCases />
+          <Benefits />
+          <SocialProof />
+          <FinalCTA />
+        </main>
+        <Footer />
+        <AuditFormModal open={modalOpen} onClose={() => setModalOpen(false)} />
+      </div>
+    </AuditModalContext.Provider>
   );
 };
 
