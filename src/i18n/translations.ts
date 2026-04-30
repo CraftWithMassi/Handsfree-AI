@@ -1,0 +1,214 @@
+export type Lang = "en" | "fr";
+
+const en = {
+  nav: {
+    problem: "Problem",
+    solution: "Solution",
+    how: "How it works",
+    useCases: "Use cases",
+    results: "Results",
+    cta: "Free audit",
+  },
+  hero: {
+    pill: "Now booking June engagements",
+    title1: "Automate your business",
+    title2: "with AI agents.",
+    subtitle:
+      "I build custom AI workflows that handle your repetitive work — so your team stops drowning in tasks and starts focusing on growth.",
+    ctaPrimary: "Get a Free Automation Audit",
+    ctaSecondary: "See how it works",
+    badges: ["No commitment", "Reply within 24h", "100% custom builds"],
+    chip1: "Agent dispatched",
+    chip2: "412 tasks/day",
+    imgAlt: "AI workflow automation dashboard showing connected agents and tasks",
+  },
+  logos: { eyebrow: "Building automations on top of" },
+  problem: {
+    eyebrow: "The problem",
+    titleA: "You didn't start your business",
+    titleB: "to do admin.",
+    subtitle: "Most operators waste 30–40% of their week on work a machine could handle.",
+    items: [
+      { title: "Hours lost to repetitive tasks", desc: "Your team copies, pastes, and updates the same things every single day." },
+      { title: "Tools that don't talk to each other", desc: "Data lives in 7 different apps. Nothing flows. Mistakes pile up." },
+      { title: "Growth blocked by manual work", desc: "You can't scale because every new client = more grunt work." },
+    ],
+  },
+  solution: {
+    pill: "The solution",
+    titleA: "AI agents that quietly run your business",
+    titleB: "in the background.",
+    desc: "Custom-built systems tailored to your workflows. No bloated SaaS. No \"one-size-fits-all\". Just the exact automation you need.",
+    bookCta: "Book a free audit",
+    points: [
+      { title: "Automate repetitive tasks", desc: "AI agents handle the work no one wants to do — accurately, every time." },
+      { title: "Connect every tool you use", desc: "Your CRM, inbox, docs, and database all working as one system." },
+      { title: "Run 24/7, with zero burnout", desc: "Workflows that don't sleep, don't forget, and don't take vacation." },
+    ],
+  },
+  how: {
+    eyebrow: "How it works",
+    titleA: "Three steps from chaos to",
+    titleB: "calm.",
+    steps: [
+      { title: "Analyze your business", desc: "We map your workflows and find the highest-leverage automations to build first." },
+      { title: "Build custom AI workflows", desc: "I design and ship the agents and integrations — usually within 2–4 weeks." },
+      { title: "Deploy & optimize", desc: "Hand-off, training, and ongoing tuning so the system gets smarter over time." },
+    ],
+  },
+  useCases: {
+    eyebrow: "Use cases",
+    titleA: "Built for the work you'd",
+    titleB: "rather not do.",
+    cases: [
+      { title: "Lead generation", desc: "Scrape, qualify, enrich, and reach out — fully on autopilot.", tag: "Sales" },
+      { title: "Customer support AI", desc: "Agents that answer 80% of tickets in seconds, not hours.", tag: "Support" },
+      { title: "Internal workflows", desc: "Onboarding, approvals, handoffs — running themselves.", tag: "Ops" },
+      { title: "Data & reporting", desc: "Pull, clean, and turn raw data into reports automatically.", tag: "Analytics" },
+    ],
+  },
+  benefits: {
+    pill: "The outcome",
+    titleA: "Less doing.",
+    titleB: "More building.",
+    desc: "Stop trading hours for output. Get a system that scales without hiring, without burnout, and without breaking the bank.",
+    stats: [
+      { value: "10–20h", label: "Saved per week" },
+      { value: "60%", label: "Lower operating cost" },
+      { value: "3×", label: "Faster turnaround" },
+      { value: "24/7", label: "Always-on agents" },
+    ],
+  },
+  proof: {
+    eyebrow: "Results",
+    titleA: "Operators are quietly",
+    titleB: "winning back time.",
+    quotes: [
+      { quote: "Saved our ops team 15+ hours a week within the first month. The ROI was obvious by week two.", name: "Sarah Chen", role: "COO, Northwind Agency" },
+      { quote: "We replaced three contractors with one AI workflow. Faster, cheaper, and weirdly more reliable.", name: "Marcus Rivera", role: "Founder, Tideline Studio" },
+      { quote: "Felt like hiring a senior engineer for the price of a SaaS subscription. Zero regrets.", name: "Priya Patel", role: "Head of Growth, Lumen" },
+    ],
+  },
+  finalCta: {
+    pill: "Free 30-min audit",
+    titleA: "Find out exactly what to",
+    titleB: "automate first.",
+    desc: "I'll review your workflows and send you a personal action plan — even if we never work together.",
+    button: "Book your free call",
+    or: "or email hello@nexlo.ai",
+  },
+  footer: {
+    desc: "Custom AI automation for founders, agencies, and operators tired of doing things by hand.",
+    links: { problem: "Problem", solution: "Solution", how: "Process", proof: "Results" },
+    rights: "Built by one human + many agents.",
+  },
+  langToggle: { aria: "Switch language", en: "EN", fr: "FR" },
+};
+
+const fr: typeof en = {
+  nav: {
+    problem: "Problème",
+    solution: "Solution",
+    how: "Fonctionnement",
+    useCases: "Cas d'usage",
+    results: "Résultats",
+    cta: "Audit gratuit",
+  },
+  hero: {
+    pill: "Réservations ouvertes pour juin",
+    title1: "Automatisez votre entreprise",
+    title2: "avec des agents IA.",
+    subtitle:
+      "Je construis des workflows IA sur mesure qui gèrent vos tâches répétitives — pour que votre équipe arrête de crouler sous le travail et se concentre sur la croissance.",
+    ctaPrimary: "Obtenir un audit gratuit",
+    ctaSecondary: "Voir comment ça marche",
+    badges: ["Sans engagement", "Réponse en 24h", "100% sur mesure"],
+    chip1: "Agent déployé",
+    chip2: "412 tâches/jour",
+    imgAlt: "Tableau de bord d'automatisation IA montrant les agents et tâches connectés",
+  },
+  logos: { eyebrow: "Automatisations construites sur" },
+  problem: {
+    eyebrow: "Le problème",
+    titleA: "Vous n'avez pas créé votre entreprise",
+    titleB: "pour faire de l'admin.",
+    subtitle: "La plupart des opérateurs perdent 30 à 40 % de leur semaine sur du travail qu'une machine pourrait faire.",
+    items: [
+      { title: "Des heures perdues sur des tâches répétitives", desc: "Votre équipe copie, colle et met à jour les mêmes choses chaque jour." },
+      { title: "Des outils qui ne se parlent pas", desc: "Les données vivent dans 7 apps différentes. Rien ne circule. Les erreurs s'accumulent." },
+      { title: "Une croissance bloquée par le manuel", desc: "Impossible de grandir : chaque nouveau client = encore plus de travail." },
+    ],
+  },
+  solution: {
+    pill: "La solution",
+    titleA: "Des agents IA qui font tourner votre business",
+    titleB: "en arrière-plan.",
+    desc: "Des systèmes sur mesure adaptés à vos workflows. Pas de SaaS surchargé. Pas de \"taille unique\". Juste l'automatisation exacte qu'il vous faut.",
+    bookCta: "Réserver un audit gratuit",
+    points: [
+      { title: "Automatiser les tâches répétitives", desc: "Les agents IA gèrent ce que personne ne veut faire — précisément, à chaque fois." },
+      { title: "Connecter tous vos outils", desc: "CRM, boîte mail, docs et base de données qui fonctionnent comme un seul système." },
+      { title: "Tourner 24/7, sans burnout", desc: "Des workflows qui ne dorment pas, n'oublient rien et ne prennent pas de vacances." },
+    ],
+  },
+  how: {
+    eyebrow: "Fonctionnement",
+    titleA: "Trois étapes du chaos au",
+    titleB: "calme.",
+    steps: [
+      { title: "Analyser votre business", desc: "On cartographie vos workflows et on identifie les automatisations à plus fort impact." },
+      { title: "Construire les workflows IA", desc: "Je conçois et livre les agents et intégrations — généralement en 2 à 4 semaines." },
+      { title: "Déployer & optimiser", desc: "Transfert, formation et ajustements continus pour un système toujours plus intelligent." },
+    ],
+  },
+  useCases: {
+    eyebrow: "Cas d'usage",
+    titleA: "Conçu pour le travail que vous",
+    titleB: "préférez éviter.",
+    cases: [
+      { title: "Génération de leads", desc: "Scraper, qualifier, enrichir et contacter — entièrement en pilote automatique.", tag: "Ventes" },
+      { title: "Support client IA", desc: "Des agents qui répondent à 80 % des tickets en secondes, pas en heures.", tag: "Support" },
+      { title: "Workflows internes", desc: "Onboarding, validations, transferts — qui se gèrent tout seuls.", tag: "Ops" },
+      { title: "Données & reporting", desc: "Extraire, nettoyer et transformer les données brutes en rapports automatiquement.", tag: "Analytique" },
+    ],
+  },
+  benefits: {
+    pill: "Le résultat",
+    titleA: "Moins exécuter.",
+    titleB: "Plus construire.",
+    desc: "Arrêtez d'échanger des heures contre du résultat. Obtenez un système qui scale sans embaucher, sans burnout et sans exploser le budget.",
+    stats: [
+      { value: "10–20h", label: "Gagnées par semaine" },
+      { value: "60%", label: "Coûts d'exploitation réduits" },
+      { value: "3×", label: "Délais plus rapides" },
+      { value: "24/7", label: "Agents toujours actifs" },
+    ],
+  },
+  proof: {
+    eyebrow: "Résultats",
+    titleA: "Les opérateurs récupèrent",
+    titleB: "leur temps en silence.",
+    quotes: [
+      { quote: "15+ heures par semaine économisées dès le premier mois. Le ROI était évident dès la deuxième semaine.", name: "Sarah Chen", role: "COO, Northwind Agency" },
+      { quote: "On a remplacé trois prestataires par un seul workflow IA. Plus rapide, moins cher, étrangement plus fiable.", name: "Marcus Rivera", role: "Fondateur, Tideline Studio" },
+      { quote: "Comme embaucher un ingénieur senior au prix d'un abonnement SaaS. Aucun regret.", name: "Priya Patel", role: "Head of Growth, Lumen" },
+    ],
+  },
+  finalCta: {
+    pill: "Audit gratuit de 30 min",
+    titleA: "Découvrez exactement quoi",
+    titleB: "automatiser en premier.",
+    desc: "Je passe en revue vos workflows et je vous envoie un plan d'action personnalisé — même si on ne travaille jamais ensemble.",
+    button: "Réserver votre appel gratuit",
+    or: "ou écrivez à hello@nexlo.ai",
+  },
+  footer: {
+    desc: "Automatisation IA sur mesure pour fondateurs, agences et opérateurs fatigués de tout faire à la main.",
+    links: { problem: "Problème", solution: "Solution", how: "Processus", proof: "Résultats" },
+    rights: "Construit par un humain + de nombreux agents.",
+  },
+  langToggle: { aria: "Changer de langue", en: "EN", fr: "FR" },
+};
+
+export const translations = { en, fr };
+export type TranslationKeys = typeof en;
