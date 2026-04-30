@@ -224,6 +224,22 @@ const fr: typeof en = {
     rights: "Construit par un humain + de nombreux agents.",
   },
   langToggle: { aria: "Changer de langue", en: "EN", fr: "FR" },
+  auditForm: {
+    title: "Recevez votre audit gratuit",
+    subtitle: "Parlez-moi de vous. Je vous contacte sur WhatsApp sous 24h.",
+    name: "Nom complet",
+    namePlaceholder: "Jean Dupont",
+    whatsapp: "Numéro WhatsApp",
+    whatsappPlaceholder: "+33 6 12 34 56 78",
+    business: "Entreprise / site web",
+    businessPlaceholder: "Acme SARL — acme.com",
+    submit: "Demander mon audit gratuit",
+    submitting: "Envoi…",
+    success: "Merci ! Je vous écris sur WhatsApp très vite.",
+    error: "Une erreur est survenue. Réessayez.",
+    privacy: "Vos infos servent uniquement à vous contacter. Jamais de spam.",
+    close: "Fermer",
+  },
 };
 
 export const translations = { en, fr };
