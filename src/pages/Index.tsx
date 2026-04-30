@@ -106,6 +106,7 @@ const LanguageToggle = ({ compact = false }: { compact?: boolean }) => {
 /* ---------------- Navbar ---------------- */
 const Navbar = () => {
   const { t } = useLanguage();
+  const { open } = useAuditModal();
   const links: [string, string][] = [
     [t.nav.problem, "#problem"],
     [t.nav.solution, "#solution"],
@@ -132,13 +133,14 @@ const Navbar = () => {
         </nav>
         <div className="flex items-center gap-3">
           <LanguageToggle />
-          <a
-            href="#cta"
+          <button
+            type="button"
+            onClick={open}
             className="group hidden items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-glow transition-all hover:shadow-[0_25px_60px_-15px_hsl(var(--primary)/0.7)] sm:inline-flex"
           >
             {t.nav.cta}
             <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
-          </a>
+          </button>
         </div>
       </div>
     </header>
@@ -148,6 +150,7 @@ const Navbar = () => {
 /* ---------------- Hero ---------------- */
 const Hero = () => {
   const { t } = useLanguage();
+  const { open } = useAuditModal();
   return (
     <section id="top" className="relative overflow-hidden pt-36 pb-24 sm:pt-44 sm:pb-32">
       <div className="absolute inset-0 grid-bg opacity-50" aria-hidden />
@@ -169,13 +172,14 @@ const Hero = () => {
             {t.hero.subtitle}
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a
-              href="#cta"
+            <button
+              type="button"
+              onClick={open}
               className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-glow transition-all hover:translate-y-[-1px] sm:w-auto"
             >
               {t.hero.ctaPrimary}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </a>
+            </button>
             <a
               href="#how"
               className="group inline-flex w-full items-center justify-center gap-2 rounded-full border border-border bg-card/60 px-6 py-3.5 text-sm font-semibold text-foreground backdrop-blur-md transition-all hover:bg-card sm:w-auto"
@@ -292,6 +296,7 @@ const Problem = () => {
 /* ---------------- Solution ---------------- */
 const Solution = () => {
   const { t } = useLanguage();
+  const { open } = useAuditModal();
   const icons = [Bot, Plug, Cpu];
   return (
     <section id="solution" className="relative py-28">
@@ -303,9 +308,13 @@ const Solution = () => {
               {t.solution.titleA} <span className="font-display italic text-gradient-primary">{t.solution.titleB}</span>
             </h2>
             <p className="mt-5 text-lg text-muted-foreground">{t.solution.desc}</p>
-            <a href="#cta" className="group mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary">
+            <button
+              type="button"
+              onClick={open}
+              className="group mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary"
+            >
               {t.solution.bookCta} <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </a>
+            </button>
           </div>
           <div className="reveal space-y-3">
             {t.solution.points.map((p, i) => {
@@ -481,6 +490,7 @@ const SocialProof = () => {
 /* ---------------- Final CTA ---------------- */
 const FinalCTA = () => {
   const { t } = useLanguage();
+  const { open } = useAuditModal();
   return (
     <section id="cta" className="py-28">
       <div className="container-tight">
@@ -495,13 +505,14 @@ const FinalCTA = () => {
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">{t.finalCta.desc}</p>
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <a
-                href="mailto:hello@nexlo.ai"
+              <button
+                type="button"
+                onClick={open}
                 className="group inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 text-sm font-semibold text-primary-foreground shadow-glow transition-all hover:translate-y-[-1px]"
               >
                 {t.finalCta.button}
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </a>
+              </button>
               <span className="text-sm text-muted-foreground">{t.finalCta.or}</span>
             </div>
           </div>
