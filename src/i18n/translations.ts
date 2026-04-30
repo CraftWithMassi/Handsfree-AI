@@ -103,6 +103,22 @@ const en = {
     rights: "Built by one human + many agents.",
   },
   langToggle: { aria: "Switch language", en: "EN", fr: "FR" },
+  auditForm: {
+    title: "Get your free audit",
+    subtitle: "Tell me a bit about you. I'll reach out on WhatsApp within 24h.",
+    name: "Full name",
+    namePlaceholder: "Jane Doe",
+    whatsapp: "WhatsApp number",
+    whatsappPlaceholder: "+1 555 000 1234",
+    business: "Business / website",
+    businessPlaceholder: "Acme Inc. — acme.com",
+    submit: "Request my free audit",
+    submitting: "Sending…",
+    success: "Thanks! I'll message you on WhatsApp shortly.",
+    error: "Something went wrong. Please try again.",
+    privacy: "Your info is only used to contact you. No spam, ever.",
+    close: "Close",
+  },
 };
 
 const fr: typeof en = {
