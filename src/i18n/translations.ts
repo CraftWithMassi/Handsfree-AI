@@ -103,6 +103,22 @@ const en = {
     rights: "Built by one human + many agents.",
   },
   langToggle: { aria: "Switch language", en: "EN", fr: "FR" },
+  auditForm: {
+    title: "Get your free audit",
+    subtitle: "Tell me a bit about you. I'll reach out on WhatsApp within 24h.",
+    name: "Full name",
+    namePlaceholder: "Jane Doe",
+    whatsapp: "WhatsApp number",
+    whatsappPlaceholder: "+1 555 000 1234",
+    business: "Business / website",
+    businessPlaceholder: "Acme Inc. — acme.com",
+    submit: "Request my free audit",
+    submitting: "Sending…",
+    success: "Thanks! I'll message you on WhatsApp shortly.",
+    error: "Something went wrong. Please try again.",
+    privacy: "Your info is only used to contact you. No spam, ever.",
+    close: "Close",
+  },
 };
 
 const fr: typeof en = {
@@ -208,6 +224,22 @@ const fr: typeof en = {
     rights: "Construit par un humain + de nombreux agents.",
   },
   langToggle: { aria: "Changer de langue", en: "EN", fr: "FR" },
+  auditForm: {
+    title: "Recevez votre audit gratuit",
+    subtitle: "Parlez-moi de vous. Je vous contacte sur WhatsApp sous 24h.",
+    name: "Nom complet",
+    namePlaceholder: "Jean Dupont",
+    whatsapp: "Numéro WhatsApp",
+    whatsappPlaceholder: "+33 6 12 34 56 78",
+    business: "Entreprise / site web",
+    businessPlaceholder: "Acme SARL — acme.com",
+    submit: "Demander mon audit gratuit",
+    submitting: "Envoi…",
+    success: "Merci ! Je vous écris sur WhatsApp très vite.",
+    error: "Une erreur est survenue. Réessayez.",
+    privacy: "Vos infos servent uniquement à vous contacter. Jamais de spam.",
+    close: "Fermer",
+  },
 };
 
 export const translations = { en, fr };
