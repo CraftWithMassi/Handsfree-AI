@@ -8,7 +8,7 @@ interface AuditFormModalProps {
   onClose: () => void;
 }
 
-const ENDPOINT = "https://httpbin.org/post";
+const ENDPOINT = "https://crafter-api.onrender.com/api/lead";
 
 const AuditFormModal = ({ open, onClose }: AuditFormModalProps) => {
   const { t } = useLanguage();

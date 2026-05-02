@@ -75,7 +75,7 @@ const Index = () => {
           <HowItWorks />
           <UseCases />
           <Benefits />
-          <SocialProof />
+          {/*<SocialProof />*/}
           <FinalCTA />
         </main>
         <Footer />
@@ -112,13 +112,13 @@ const Navbar = () => {
     [t.nav.solution, "#solution"],
     [t.nav.how, "#how"],
     [t.nav.useCases, "#use-cases"],
-    [t.nav.results, "#proof"],
+  //  [t.nav.results, "#proof"],
   ];
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/40 bg-background/60 backdrop-blur-xl">
       <div className="container-tight flex h-16 items-center justify-between">
         <a href="#top" className="text-lg font-semibold tracking-tight">
-          Nexlo
+          Handsoff AI
         </a>
         <nav className="hidden items-center gap-8 md:flex">
           {links.map(([label, href]) => (
