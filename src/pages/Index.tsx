@@ -530,7 +530,7 @@ const Footer = () => {
       <div className="container-tight">
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div>
-            <span className="font-semibold">Nexlo</span>
+            <span className="font-semibold">Handsoff AI</span>
             <p className="mt-3 max-w-sm text-sm text-muted-foreground">{t.footer.desc}</p>
           </div>
           <div className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-muted-foreground">
@@ -539,12 +539,12 @@ const Footer = () => {
             <a href="#how" className="hover:text-foreground">{t.footer.links.how}</a>
             <a href="#proof" className="hover:text-foreground">{t.footer.links.proof}</a>
             <a href="mailto:hello@nexlo.ai" className="inline-flex items-center gap-1.5 hover:text-foreground">
-              <Mail className="h-3.5 w-3.5" /> hello@nexlo.ai
+              <Mail className="h-3.5 w-3.5" /> cwmbusinesses@gmail.com
             </a>
           </div>
         </div>
         <div className="mt-10 border-t border-border/40 pt-6 text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Nexlo. {t.footer.rights}
+          © {new Date().getFullYear()} Handsoff. {t.footer.rights}
         </div>
       </div>
     </footer>

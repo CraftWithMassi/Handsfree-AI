@@ -95,7 +95,7 @@ const en = {
     titleB: "automate first.",
     desc: "I'll review your workflows and send you a personal action plan — even if we never work together.",
     button: "Book your free call",
-    or: "or email hello@nexlo.ai",
+    or: "or email cwmbusinesses@gmail.com",
   },
   footer: {
     desc: "Custom AI automation for founders, agencies, and operators tired of doing things by hand.",
